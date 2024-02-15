@@ -1,0 +1,1 @@
+export PEQUOD_POST_COMMAND=say
