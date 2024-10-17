@@ -1,1 +1,3 @@
-complete -C /usr/local/bin/terraform terraform
+if [[ -e ]] ; then
+  complete -C /usr/local/bin/terraform terraform
+fi
