@@ -10,7 +10,7 @@ if [[ -f /etc/bashrc.user ]]; then
     . /etc/bashrc.user
 fi
 
-for f in $HOME/.bashrc.d/*
+for f in $HOME/.bashrc.d/*.{bash,sh}
 do
     if [[ -f "$f" ]]; then
         source $f
@@ -21,7 +21,7 @@ if [[ -f ~/.bash_aliases ]]; then
     . ~/.bash_aliases
 fi
 
-for f in /usr/local/etc/bash_completion.d/* 
+for f in /usr/local/etc/bash_completion.d/*.{bash,sh}
 do
     if [[ -f "$f" ]]; then
         source $f

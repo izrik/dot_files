@@ -6,7 +6,7 @@ if [[ -f ~/.bashrc ]]; then
     . ~/.bashrc
 fi
 
-for f in $HOME/.bash_profile.d/*
+for f in $HOME/.bash_profile.d/*.{bash,sh}
 do
     if [[ -f "$f" ]]; then
         source $f
